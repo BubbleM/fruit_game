@@ -1,0 +1,35 @@
+body{
+    border:2px black solid;
+}
+#span1{
+    height: 600px;
+    /*width: 88px;*/
+    /*background-color: aqua;*/
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+#canvas {
+    border:  1px solid black;
+    background:#6699CC;
+    /*margin-left:120px;*/
+   margin-left:60px;
+}
+#tip{
+    background:#FAEBD7;
+    position: absolute;
+    right: 20px;
+    height: 600px;
+    width: 480px;
+}
+#num{
+    width: 150px;
+    height:100px;
+    margin:100px auto;
+}
+p{
+    text-align:center;
+}

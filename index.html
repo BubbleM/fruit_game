@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>接水果小游戏</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.1.1.min.js"></script>
+
+</head>
+<body onkeydown="keyEvent(event)">
+    <span id="span1">接</br>水</br>果</br>小</br>游</br>戏</span>
+    <div id="tip">
+        <p>使用上下左右键控制太空船躲避宇宙碎片</p>
+        <p>注意：需要先用鼠标点一下这个页面，让页面的焦点切换到这个游戏页面上</p>
+        <br>
+        <div id="num">
+           <button type="button" onclick="num()">查看当前分数</button>
+            </br><button type="button" style="margin-top: 30px;" onclick="myrefresh()">再来一次</button>
+        </div>
+    </div>
+    <canvas id="canvas" width="700" height="600"></canvas>
+    <script src="game.js"></script>
+</body>
+</html
