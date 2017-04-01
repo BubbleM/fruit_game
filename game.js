@@ -1,101 +1,3 @@
-// const canvas = document.getElementById('canvas');
-// const ctx = canvas.getContext('2d');
-
-// ctx.fillRect(0,0,300,400);
-// ctx.beginPath();
-
-// var x=30;
-// var y=30;
-// var i=0;
-// var j=0;
-
-// ctx.fillStyle="#ff0000";
-
-// for(var k=0;k<2;k++){
-//     ctx.fillRect(x+i,y+i,30,30);
-//     i+=30;
-// }
-// ctx.fillRect(40,40,30,30);
-// console.log(Math.floor(Math.random()*300));//生成随机数
-
-// let y=0;
-// let int=self.setInterval("clock()",50);
-// let x = Math.floor(Math.random()*300);
-// // ctx.fillRect(x,0,30,30);//屏幕顶端生成随机碎片
-// function clock() { //生成随机碎片让其垂直掉落
-//     ctx.clearRect(0,0,300,400);
-//     ctx.fillRect(x,y++,30,30);
-// }
-
-// let x=50;
-// let y=50;
-//
-// let player=20;
-// function drawPlayer() {
-//     ctx.clearRect(0,0,canvas.width,canvas.height);
-//     ctx.fillRect(x,y,player,player);
-// }
-// function left() {
-//     if(x<=0){
-//         x=canvas.width-player;
-//     }else {
-//         x-=player;
-//     }
-// }
-// function right() {
-//     if(x>=canvas.width-player){
-//         x=0;
-//     }else{
-//         x+=player;
-//     }
-// }
-// function down() {
-//     if(y>=canvas.height-player){
-//         y=canvas.height-player;
-//     }else {
-//         y+=player;
-//     }
-// }
-// function top() {
-//     if(y<=0){
-//         y=0;
-//     }else {
-//         y-=player;
-//     }
-// }
-// drawPlayer();
-// left();
-// right();
-// down();
-// top();
-// function keydown(e) {
-//     var currKey = e.keyCode;
-//     if(currKey >= 37 && currKey <= 40){
-//         switch (currKey){
-//             case 37:
-//                 // x-=20;
-//                 left();
-//                 break;
-//             case 38:
-//                 // y-=20;
-//                 top();
-//                 break;
-//             case 39:
-//                 // x+=20;
-//                 right();
-//                 break;
-//             case 40:
-//                 // y+=20;
-//                 down();
-//                 break;
-//             default:
-//                 break;
-//         }
-//         drawPlayer();
-//     }
-// }
-// document.onkeydown = keydown;
-
 const canvas = document.getElementById('canvas'); // 获取画布
 const ctx = canvas.getContext('2d'); //获取该canvas的2D绘图环境对象
 number=0;
@@ -106,10 +8,6 @@ for(var j=0;j<24;j++){
     fruitImgs[j] = new Image();
     fruitImgs[j].src = "./img/"+j+".png";
 }
-
-// let j = 1;
-// fruitImg.src="./img/"+j+".png";
-// fruitImg.src = './img/1.png';
 
 let game={  // 数据结构
     isover:false,
@@ -159,10 +57,7 @@ function move(){
         creatDesire();
     }
     drawDesire();
-
     creatShip();
-
-
 }
 
 function left(){  //飞船左移
