@@ -3,8 +3,6 @@ body{
 }
 #span1{
     height: 600px;
-    /*width: 88px;*/
-    /*background-color: aqua;*/
     float: left;
     font-size: 20px;
     font-weight: bold;
@@ -15,8 +13,7 @@ body{
 #canvas {
     border:  1px solid black;
     background:#6699CC;
-    /*margin-left:120px;*/
-   margin-left:60px;
+    margin-left:60px;
 }
 #tip{
     background:#FAEBD7;
